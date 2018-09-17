@@ -2,7 +2,7 @@ import datetime
 import random
 import pyodbc
 
-sql=pyodbc.connect('DSN=localdb;uid=JBT;pwd=password')
+sql=pyodbc.connect('DSN=localdb;uid=Database;pwd=12345')
 p=sql.cursor()
 
 def Queries (n,t,xt):
