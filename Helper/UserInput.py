@@ -1,15 +1,27 @@
 import  JReader
 
 calling = []
-
+service = True
 if __name__ == "__main__":
 
     js = JReader.ReadJSON()
 
-    uinput = input('Enter input: \n')
+    print('Enter Funcionts: \n\n')
 
-    function='js.'+uinput
+    uinput = input('User>> ')
+    
+while service:
 
-    exec(function)
+    inst = uinput.split()
+    function='js.'+inst[0]
     
-    
+    try:
+        exec(function)
+
+    except:
+        print("Error - Function doesn't exist")
+            
+    uinput = input('User>> ')
+
+    if inst[0] == 'exit' or inst[0] == 'exit()':
+        service = False
