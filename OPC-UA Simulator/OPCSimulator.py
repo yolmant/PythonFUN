@@ -57,7 +57,7 @@ class App(Tk):
         page.grid(row=0, column=0, sticky="nsew")
 
         self.show_frame()
-
+        
     #set the frame of the application on top
     def show_frame(self):
         '''Show a frame for the given page name'''
