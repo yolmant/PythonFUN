@@ -13,7 +13,7 @@ class KeyCreator:
         pivet = pivet_pass.read()
         pivet_pass.close()
 
-        salt = b"\x9c\xd3\xd4\x9f\x88\xc4\xec\xfba\x87\x1d'DL\xe26\xf2K\xf4;z(\xe4\xb9\x8f\x00\xdf\xe8\xc3l\\\x91"
+        salt = b"\x9c\xd3\xd4\x9f\x88\xc4x1d'DL\xe26\xf2K\xf4;\xdf\xe8\xc3l\\\x91"
 
         kdf = PBKDF2HMAC (
             algorithm = hashes.SHA256(),
