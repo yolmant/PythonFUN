@@ -3,7 +3,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 import EncypData
 import json
-import time
 
 #Function to time out the excecution of the driver
 def wait(sec):
